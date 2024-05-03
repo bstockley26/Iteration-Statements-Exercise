@@ -13,7 +13,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="IterationStatements">
+          <Node name="IterationStatements" expanded="True">
             <Node name="IterationStatements" expanded="True" />
           </Node>
         </State>

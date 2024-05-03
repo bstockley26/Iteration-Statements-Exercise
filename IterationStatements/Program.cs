@@ -27,7 +27,12 @@
         //Call the methods to test them in the Main method below
         static void Main(string[] args)
         {
+            ListThousand();
+            AddByThree();
+            EqualityCheck(3, 9);
             VotingElegibity();
+            EvenOddTest(3);
+            PositiveOrNegative(9);
         }
         static void ListThousand()
         {
@@ -58,25 +63,21 @@
 
             } while (num <= 999);
         }
-        static void EqualityCheck()
+        static void EqualityCheck(int a, int b)
         {
-            int a;
-            int b;
-
-            a = 8;
-            b = 8;
+            
 
             var correctStatement = (a == b) ? "Integars are equal" : "Integers are not equal!";
 
             Console.WriteLine(correctStatement);
         }
-        static void EvenOddTest()
+        static void EvenOddTest(int a)
         {
-            int a;
+            
             int division;
             bool evenOrOdd;
 
-            a = 7;
+            
             division = a % 2;
 
             evenOrOdd = division == 0;
@@ -90,12 +91,12 @@
                 Console.WriteLine($"{a} is odd!");
             }
         }
-        static void PositiveOrNegative()
+        static void PositiveOrNegative(int a)
         {
-            int a;           
+                     
             bool posOrNeg;
 
-            a = -8;
+            
             posOrNeg = a >= 0;
 
             if (posOrNeg == true)
@@ -120,7 +121,7 @@
             }
             else
             {
-                Console.WriteLine("You are to young to vote");
+                Console.WriteLine("You are to young to vote!!");
             }
         }
     }
